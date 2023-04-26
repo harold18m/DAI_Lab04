@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ejercicio 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200">
+	<nav class="bg-white shadow-lg">
+		<div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
+			<div class="flex justify-between h-16">
+				<div class="flex">
+					<a href="ejercicio1.html" class="flex items-center justify-center h-16 px-4 text-gray-900 hover:text-gray-600">Ejercicio 1</a>
+					<a href="ejercicio2.html" class="flex items-center justify-center h-16 px-4 text-gray-900 hover:text-gray-600">Ejercicio 2</a>
+					<a href="ejercicio3.html" class="flex items-center justify-center h-16 px-4 text-gray-900 hover:text-gray-600">Ejercicio 3</a>
+					<a href="ejercicio4.html" class="flex items-center justify-center h-16 px-4 text-gray-900 hover:text-gray-600">Ejercicio 4</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container mx-auto py-12">
+		<div
+		  class="max-w-md mx-auto bg-white shadow-lg rounded-lg overflow-hidden"
+		>
+		  <div class="py-4 px-6">
+			<h2 class="text-2xl font-bold mb-2">Calculadora de sueldo de vendedores</h2>
+			<form action="ejercicio1.php" method="POST">
+			  <div class="mb-4">
+				<label class="block font-semibold mb-2"
+				  >Importe total vendido del mes (S/.)</label
+				>
+				<input
+				  type="number"
+				  min="0"
+				  name="importe_total_vendido"
+				  required
+				  class="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+				  placeholder="Ingrese el importe total vendido del mes"
+				/>
+			  </div>
+			  <div class="mb-4">
+				<label class="block font-semibold mb-2"
+				  >Cantidad de hijos en edad escolar</label
+				>
+				<input
+				  type="number"
+				  name="cantidad_de_hijos_en_edad_escolar"
+				  min="0"
+				  required
+				  class="w-full px-3 py-2 border border-gray-400 rounded-md focus:outline-none focus:ring focus:ring-blue-500"
+				  placeholder="Ingrese la cantidad de hijos en edad escolar"
+				/>
+			  </div>
+			  <div class="flex justify-end">
+				<button
+				  type="submit"
+				  class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+				>
+				  Calcular
+				</button>
+			  </div>
+			</form>
+		  </div>
+		</div>
+	  </div>
+</body>
+</html>
